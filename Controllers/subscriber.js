@@ -3,17 +3,17 @@ const PushNotification = require('node-pushnotifications')
 const publicVapidKey = process.env.PUBLIC_VAPID_KEY
 const privateVapidKey = process.env.PRIVATE_VAPID_KEY
 
-const subcriber = (req, res) => {
+const subscriber = (req, res) => {
   const subcription = req.body
   console.log(subcription)
   const settings = {
     web: {
       vapidDetails: {
-        subject: "mailto: <kobiowuq@gmail.com>",
+        subject: "mailto:kobiowuq@gmail.com",
         publicKey: publicVapidKey,
         privateKey: privateVapidKey
         },
-        gcmAPIkey: "gcmkey",
+        gcmAPIKey: "gcmkey",
         TTL: 2419200,
         contentEncoding: "aes128gcm",
         headers: {}
@@ -35,4 +35,4 @@ const subcriber = (req, res) => {
 }
 
 
-module.exports = subcriber
+module.exports = subscriber
