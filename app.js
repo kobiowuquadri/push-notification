@@ -2,7 +2,6 @@ require('dotenv').config()
 const express = require('express')
 const webpush = require('web-push')
 const path = require('path')
-const PushNotification = require('node-pushnotifications')
 const allowPushNotification = require('./Middlewares/allowPushNotification')
 
 const app = express()
