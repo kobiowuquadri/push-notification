@@ -1,4 +1,4 @@
-const publicVapidKey = process.env.PUBLIC_VAPID_KEY
+const publicVapidKey = "BJgrPl9SlifyJ5_2SSH23lFJsANqrxoe3_IUM-_2c_XVYpCjPVndk-yyxPztUIPZ-0-k4dALOinFdUQ9Rf2RXa0"
 
 // Check for service worker
 if ("serviceWorker" in navigator) {

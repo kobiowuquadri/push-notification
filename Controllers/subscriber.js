@@ -4,8 +4,8 @@ const publicVapidKey = process.env.PUBLIC_VAPID_KEY
 const privateVapidKey = process.env.PRIVATE_VAPID_KEY
 
 const subscriber = (req, res) => {
-  const subcription = req.body
-  console.log(subcription)
+  const subscription = req.body 
+  console.log(subscription)
   const settings = {
     web: {
       vapidDetails: {
@@ -25,7 +25,7 @@ const subscriber = (req, res) => {
  
   // create payload
   const payload = { title: "Notification from DevQuat"} 
-  push.send(subcription, payload, (err, result) =>{
+  push.send(subscription, payload, (err, result) =>{
     if(err){
       console.log(err)
     }else {
